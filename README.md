@@ -78,7 +78,9 @@ It supports a range of configurable parameters for training, validation, and eva
 - [x] MTKD-based monolingual SER methods for English, Finnish, and French.
   - [ ] Adapt the method for a new language (e.g., Chinese).
 - [x] MTKD-based multilingual SER method for English, Finnish, and French.
-  - [ ] Extend the multilingual method to include a resource-scarce language (e.g., Bangla).
+  - [ ] Extend the multilingual method to include a resource-scarce language (e.g., Bangla).   
+- [ ] Incorporate heterogeneous Large Audio-Language Models in the MTKD method.
+  - [ ] Distill the internal knowledge of heterogeneous models to the student.
 
 
 ## Citation
