@@ -44,8 +44,23 @@ conda activate ser_venv
 
 ## Usage
 
+**1. Multi-Teacher Language-Aware Knowledge Distillation for English Speech Emotion Recognition Using the Monolingual Setup**
+```bash
+python main.py --LEARNING_RATE 3e-5 --BATCH_SIZE 16 --N_EPOCHS 20 --SESSION 5 --TRAINING 1 --PARADIGM "MTKD" --LANGUAGE "EN" --LINGUALITY "Monolingual"
+```
 
-<!-- Available Configurations and Choices -->
+**2. Conventional Knowledge Distillation for Finnish Speech Emotion Recognition Using the Multilingual Setup**
+```bash
+python main.py --LEARNING_RATE 3e-5 --BATCH_SIZE 16 --N_EPOCHS 20 --SESSION 9 --TRAINING 1 --PARADIGM "KD" --LANGUAGE "FI" --LINGUALITY "Multilingual"
+```
+
+**3. Vanilla Fine-Tuning for French Speech Emotion Recognition Using the Multilingual Setup**
+```bash
+python main.py --LEARNING_RATE 3e-5 --BATCH_SIZE 16 --N_EPOCHS 20 --SESSION 1 --TRAINING 1 --PARADIGM "FT" --LANGUAGE "FR" --LINGUALITY "Multilingual"
+```
+
+**4. Available Configurations and Choices**
+
 It supports a range of configurable parameters for training, validation, and evaluation. The table below details each *Configuration* and its *options*. Select the options that fit your use case.
 | **Configuration** | **Options**                       |
 |:------------------|:----------------------------------|
