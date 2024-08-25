@@ -17,6 +17,30 @@
 
 ## Installation
 
+**1. Clone the Repository**
+```bash
+git clone https://github.com/aalto-speech/mtkd4ser.git
+```
+```bash
+cd mtkd4ser
+```
+
+**2. Create the Environment**
+```bash
+conda env create -f environment.yml
+```
+
+**3. Activate the Environment**
+```bash
+conda activate ser_venv
+```
+
+<!--
+**x. xx**
+```bash
+
+```
+-->
 
 ## Usage
 
