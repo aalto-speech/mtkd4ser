@@ -45,6 +45,20 @@ conda activate ser_venv
 ## Usage
 
 
+<!-- Available Configurations and Choices -->
+It supports a range of configurable parameters for training, validation, and evaluation. The table below details each *Configuration* and its *options*. Select the options that fit your use case.
+| **Configuration** | **Options**                       |
+|:------------------|:----------------------------------|
+| LINGUALITY        | `Monolingual` or `Multilingual`   |
+| LANGUAGE          | `EN` or `FI` or `FR`              |
+| PARADIGM          | `MTKD` or `KD` or `FT`            |
+| TRAINING          | `1` or `0`                        |
+| SESSION           | `EN: 1-5` or `FI: 1-9` or `FR: 1` |
+| N_EPOCHS          | `ℤ⁺`                              |
+| BATCH_SIZE        | `ℤ⁺`                              |
+| LEARNING_RATE     | `ℝ⁺`                              |
+
+
 ## Contributing
 
 
