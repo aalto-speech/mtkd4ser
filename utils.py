@@ -48,8 +48,13 @@ def update_iemocap_path(path):
 
 ##########################################################################
 
+# def update_cafe_path(path):
+#     return "/scratch/elec/t405-puhe/p/bijoym1/TempDatasets" + path.split("/m/teamwork/t40511_asr/c/CaFE/data")[-1]
+
+##########################################################################
+
 def update_cafe_path(path):
-    return "/scratch/elec/t405-puhe/p/bijoym1/TempDatasets" + path.split("/m/teamwork/t40511_asr/c/CaFE/data")[-1]
+    return "/content" + path
 
 ##########################################################################
 
