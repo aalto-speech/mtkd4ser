@@ -138,7 +138,8 @@ def fesc(session):
 def cafe(session=None):
     cafe_df = pd.DataFrame()
 
-    all_files = glob.glob("/m/triton/scratch/elec/t405-puhe/p/bijoym1/CaFE_json_splits/*")
+    # all_files = glob.glob("/m/triton/scratch/elec/t405-puhe/p/bijoym1/CaFE_json_splits/*")
+    all_files = glob.glob("/content/CaFE/CaFE_splits/*")
 
     for file in all_files:
         with open(file, "r") as f:

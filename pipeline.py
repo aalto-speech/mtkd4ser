@@ -24,7 +24,8 @@ def pipeline_ft(model, train_loader, valid_loader, test_loader, hyperparam, devi
     LINGUALITY = hyperparam['LINGUALITY']
     LANGUAGE = hyperparam['LANGUAGE']
 
-    file_path = f"/m/triton/scratch/elec/t405-puhe/p/bijoym1/SER/FTWav2Vec2/checkpoints/ft/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}.pth"
+    # file_path = f"/m/triton/scratch/elec/t405-puhe/p/bijoym1/SER/FTWav2Vec2/checkpoints/ft/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}.pth"
+    file_path = f"/content/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}.pth"
 
     optimizer = torch.optim.AdamW(model.parameters(), lr = LEARNING_RATE)
     loss_fn = torch.nn.CrossEntropyLoss()
@@ -40,7 +41,8 @@ def pipeline_ft(model, train_loader, valid_loader, test_loader, hyperparam, devi
         print("Model checkpoint has been loaded")
     
     # Initialize TensorBoard writer
-    writer = SummaryWriter(log_dir=f"/m/triton/scratch/elec/t405-puhe/p/bijoym1/SER/FTWav2Vec2/tensorboards/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}")
+    # writer = SummaryWriter(log_dir=f"/m/triton/scratch/elec/t405-puhe/p/bijoym1/SER/FTWav2Vec2/tensorboards/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}")
+    writer = SummaryWriter(log_dir=f"/content/tensorboards/FT_{LINGUALITY}_{LANGUAGE}_S{SESSION}")
 
     if TRAINING == 0: # No training, test/validation only
         test_unweighted_recall, test_weighted_recall, test_accuracy, total_test_loss, test_confidence_scores, all_actual_labels, all_predictions = validation(
