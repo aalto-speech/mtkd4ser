@@ -54,7 +54,7 @@ def update_iemocap_path(path):
 ##########################################################################
 
 def update_cafe_path(path):
-    return "/content" + path
+    return "/content/CaFE/" + path
 
 ##########################################################################
 
