@@ -8,12 +8,18 @@
 <div align="center">
   <details>
     <summary>Table of Contents</summary>
+    <a href="#run-on-colab">Run on Colab</a><br>
     <a href="#installation">Installation</a><br>
     <a href="#usage">Usage</a><br>
     <a href="#contributing">Contributing</a><br>
     <a href="#citation">Citation</a>
   </details>
 </div>
+
+## Run on Colab
+* Run the notebook: [**mtkd4ser.ipynb**](https://github.com/aalto-speech/mtkd4ser/blob/EN_FI_FR/mtkd4ser.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aalto-speech/mtkd4ser/blob/EN_FI_FR/mtkd4ser.ipynb)
+
+
 
 ## Installation
 
