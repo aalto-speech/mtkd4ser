@@ -43,7 +43,7 @@ def main():
     if LANGUAGE == "EN" and SESSION > 5:
         raise ValueError("Error: English dataset IEMOCAP does not have more than five splits!")
     elif LANGUAGE == "FR" and SESSION > 1:
-        raise ValueError("Error: French dataset CaFE does not have more than five splits!")
+        raise ValueError("Error: French dataset CaFE does not have more than one split!")
 
     if  LINGUALITY == "Monolingual":
         if LANGUAGE == "EN":
